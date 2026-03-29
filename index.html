@@ -211,6 +211,7 @@
       { id: 'indian-street-food', label: 'Indian Street Food', icon: '🛺' },
       { id: 'indian-curries', label: 'Indian Curries', icon: '🍛' },
       { id: 'indian-breads', label: 'Indian Breads', icon: '🫓' },
+      { id: 'south-indian-sambar', label: 'South Indian Sambar', icon: '🌶️' },
       { id: 'rice-dishes', label: 'Rice Dishes', icon: '🍚' },
       { id: 'soups-and-dals', label: 'Soups & Dals', icon: '🥣' },
       { id: 'desserts', label: 'Desserts', icon: '🍮' }
@@ -374,6 +375,112 @@
           rice:['Not applicable'],
           garnish:['Chopped coriander','Lemon wedges','Sliced onions'],
           storage:['Best fresh','Reheat masala if needed','Do not store pav separately']
+        }
+      },
+      {
+        id:'vetha-kuzhambu', name:'Vetha Kuzhambu', category:'south-indian-sambar', cuisine:'Tamil Nadu', time:'35 mins', baseServings:4,
+        heroImage:'photo-1504674900247-0877df9cc836',
+        ingredients:[
+          { group:'🌿 Tamarind Soup', items:[
+              { name:'Tamarind pulp', amount:1, unit:'cup' },
+              { name:'Water', amount:3, unit:'cups' }
+            ]
+          },
+          { group:'🥕 Vegetables', items:[
+              { name:'Drumstick (murungakkai), cut', amount:6, unit:'pieces' },
+              { name:'Brinjal/eggplant, cut', amount:100, unit:'g' },
+              { name:'Shallots', amount:8, unit:'' },
+              { name:'Tomato, chopped', amount:1, unit:'' }
+            ]
+          },
+          { group:'🌶️ Spice Paste', items:[
+              { name:'Dry red chilies', amount:5, unit:'' },
+              { name:'Coriander seeds', amount:2, unit:'tbsp' },
+              { name:'Fenugreek seeds', amount:0.5, unit:'tsp' },
+              { name:'Coconut, grated', amount:0.25, unit:'cup' },
+              { name:'Peppercorns', amount:1, unit:'tsp' },
+              { name:'Cumin seeds', amount:1, unit:'tsp' },
+              { name:'Garlic cloves', amount:4, unit:'' }
+            ]
+          },
+          { group:'🧈 Seasoning', items:[
+              { name:'Sesame oil', amount:2, unit:'tbsp' },
+              { name:'Mustard seeds', amount:1, unit:'tsp' },
+              { name:'Curry leaves', amount:1, unit:'sprig' },
+              { name:'Turmeric powder', amount:0.5, unit:'tsp' },
+              { name:'Salt', amount:0, unit:'to taste' }
+            ]
+          }
+        ],
+        steps:[
+          { phase:'Phase 1 — Soak & Boil', title:'Soak Tamarind & Cook Veg', body:'Soak tamarind in warm water for 10 mins. In a pot, boil drumsticks, brinjal, shallots, tomato and turmeric till veggies are tender.', timer:'15 mins · Simmer', tip:'Drumsticks add signature tang and texture.', image:'photo-1612679300857-0b7600449e68' },
+          { phase:'Phase 2 — Roast Spice Paste', title:'Dry Roast Masala', body:'Dry roast dry red chilies, coriander, fenugreek, peppercorns, cumin and grated coconut till fragrant. Grind with garlic and little water to smooth paste.', timer:'8 mins · Medium', tip:'Fresh grind yields the best aroma.', image:'photo-1599297915019-39c62af59ea1' },
+          { phase:'Phase 3 — Simmer', title:'Add Paste to Tamarind Water', body:'Strain tamarind water into pot, add the paste and simmer for 8 minutes until thickened. Adjust salt.', timer:'8 mins · Low', tip:'Keep stirring to avoid sticking.', image:'photo-1514986888952-8cd320577b68' },
+          { phase:'Phase 4 — Temper', title:'Final Seasoning', body:'Heat sesame oil, crack mustard seeds, add curry leaves and pour seasoning into the simmering kuzhambu.', timer:'2 mins · Hot', tip:'Tempering on top gives a golden finish.', image:'photo-1502672023538-8b0bfe630f1c' }
+        ],
+        tips:[
+          { icon:'🍅', title:'Tamarind Strength', body:'Use medium sour tamarind to avoid over-acidic taste.' },
+          { icon:'🌿', title:'Coconut Aromatics', body:'Grated coconut in masala makes the kuzhambu velvety.' },
+          { icon:'🥄', title:'Texture Control', body:'Cook until the gravy coats a spoon for perfect consistency.' },
+          { icon:'🌶️', title:'Heat Level', body:'Adjust red chilies for mild to spicy preference.' },
+          { icon:'⏲️', title:'Rest Time', body:'Rest for 5 mins after cooking for flavors to settle.' }
+        ],
+        serving:{
+          bread:['Hot Rice'],
+          rice:['Steamed rice'],
+          garnish:['Curry leaves','Coriander'],
+          storage:['Refrigerate 1 day','Reheat gently','Do not freeze']
+        }
+      },
+      {
+        id:'arachuvitta-sambar', name:'Arachuvitta Sambar', category:'south-indian-sambar', cuisine:'Tamil Nadu', time:'40 mins', baseServings:4,
+        heroImage:'photo-1594703862671-7eeaf2ffa7d1',
+        ingredients:[
+          { group:'🥕 Veg Mix', items:[
+              { name:'Toor dal', amount:1, unit:'cup' },
+              { name:'Carrot, diced', amount:1, unit:'' },
+              { name:'Drumstick', amount:4, unit:'pieces' },
+              { name:'Brinjal', amount:1, unit:'' },
+              { name:'Onion', amount:1, unit:'' }
+            ]
+          },
+          { group:'🪵 Sambar Powder', items:[
+              { name:'Coriander seeds', amount:2, unit:'tbsp' },
+              { name:'Red chilies', amount:4, unit:'' },
+              { name:'Fenugreek seeds', amount:0.5, unit:'tsp' },
+              { name:'Black pepper', amount:0.5, unit:'tsp' },
+              { name:'Coconut', amount:0.25, unit:'cup' }
+            ]
+          },
+          { group:'🧂 Misc', items:[
+              { name:'Tamarind pulp', amount:2, unit:'tbsp' },
+              { name:'Turmeric powder', amount:0.5, unit:'tsp' },
+              { name:'Oil', amount:2, unit:'tbsp' },
+              { name:'Mustard seeds', amount:1, unit:'tsp' },
+              { name:'Curry leaves', amount:1, unit:'sprig' },
+              { name:'Salt', amount:0, unit:'to taste' }
+            ]
+          }
+        ],
+        steps:[
+          { phase:'Phase 1 — Cook Dal', title:'Boil Toor Dal', body:'Wash and pressure cook toor dal with 2 cups water and turmeric until soft. Mash lightly.', timer:'15 mins · Pressure cook', tip:'Soft dal forms the base of sambar.', image:'photo-1504674900247-0877df9cc836' },
+          { phase:'Phase 2 — Roast Sambar Powder', title:'Roast and Grind', body:'Dry roast coriander, red chilies, fenugreek, pepper and coconut; grind with minimal water to a paste.', timer:'8 mins · Medium', tip:'Freshly roasted powder enhances flavor.', image:'photo-1592322370419-e4e6cacf6b59' },
+          { phase:'Phase 3 — Veg Cook', title:'Cook Vegetables', body:'In a saucepan, cook vegetables with turmeric and salt until just tender.', timer:'10 mins · Simmer', tip:'Do not overcook to preserve bite.', image:'photo-1710235951341-97d07721170b' },
+          { phase:'Phase 4 — Combine', title:'Add Dal & Tamarind', body:'Add cooked dal, tamarind water, sambar powder paste and enough water. Simmer for 7 mins.', timer:'7 mins · Low', tip:'Adjust water for desired consistency.', image:'photo-1514986888952-8cd320577b68' },
+          { phase:'Phase 5 — Temper', title:'Finish with Seasoning', body:'Temper mustard seeds, curry leaves in oil and add to sambar.', timer:'2 mins · Hot', tip:'A good tempering lifts the final dish.', image:'photo-1612679300857-0b7600449e68' }
+        ],
+        tips:[
+          { icon:'🌾', title:'Lentil Softness', body:'Mash toor dal well for creaminess.' },
+          { icon:'🍋', title:'Sourness', body:'Tamarind gives classic tang; adjust to taste.' },
+          { icon:'🌶️', title:'Heat', body:'Add green chili for mild heat if preferred.' },
+          { icon:'🧂', title:'Salt Check', body:'Balance salt after simmering with veg and dal.' },
+          { icon:'🥄', title:'Rest', body:'Let sambar rest 5 mins for flavors to blend.' }
+        ],
+        serving:{
+          bread:['Steamed rice'],
+          rice:['Plain soft rice'],
+          garnish:['Coriander leaves','Onion slices'],
+          storage:['Refrigerate 2 days','Reheat with water','Do not freeze']
         }
       },
       {
