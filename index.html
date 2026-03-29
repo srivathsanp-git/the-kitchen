@@ -41,7 +41,7 @@
     .recipe-item { display: block; padding: .25rem .4rem; margin: .15rem 0; border-left: 3px solid transparent; color: var(--dim); cursor: pointer; border-radius: 4px; transition: all .2s ease; }
     .recipe-item:hover { color: var(--bright); background: rgba(255,255,255,.05); }
     .recipe-item.active { color: var(--ember); border-left-color: var(--ember); font-weight: 700; }
-    .serves-control { margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--border); }
+    .serves-control { display: none; }
     .serves-control h3 { font-family: 'DM Mono', monospace; letter-spacing:.13em; text-transform: uppercase; color: var(--dimmer); margin: 0 0 .5rem; font-size: .78rem; }
     .serves-row { display:flex; align-items:center; justify-content: space-between; gap:.5rem; }
     .serves-row button { width: 2.2rem; height: 2.2rem; border-radius: 10px; border:1px solid var(--border); color: var(--bright); background: rgba(255,255,255,0.05); cursor: pointer; font-size: 1.2rem; }
@@ -236,12 +236,12 @@
           }
         ],
         steps:[
-          { phase:'Phase 1 — Prep', title:'Chop and Parboil', body:'Dice onions, tomatoes, green pepper, and carrots. Boil potatoes, cauliflower and peas until fork tender.', timer:'10 mins · Medium heat', tip:'Uniform pieces ensure even mash and texture.', image:'https://hebbarskitchen.com/wp-content/uploads/2021/03/masala-pav-recipe-bhaji-masala-pav-mumbai-street-style-pav-masala-10-1024x1024.jpeg' },
-          { phase:'Phase 2 — Aromatics', title:'Saute Onions', body:'Heat butter, add cumin seeds, then sauté onions until translucent. Add ginger-garlic paste and cook until fragrance rises.', timer:'5 mins · Low-medium', tip:'Don’t let the garlic brown; this keeps the gravy sweet.', image:'https://hebbarskitchen.com/wp-content/uploads/2021/03/masala-pav-recipe-bhaji-masala-pav-mumbai-street-style-pav-masala-11-1024x1024.jpeg' },
-          { phase:'Phase 3 — Tomato Cook', title:'Add Tomatoes & Spices', body:'Add chopped tomatoes, green chilli, chilli powder and pav bhaji masala. Cook until tomatoes soften and oil clears.', timer:'7 mins · Medium', tip:'Stir frequently to avoid sticking at the bottom.', image:'https://hebbarskitchen.com/wp-content/uploads/2021/03/masala-pav-recipe-bhaji-masala-pav-mumbai-street-style-pav-masala-12-1024x1024.jpeg' },
-          { phase:'Phase 4 — Blend', title:'Mash a Spicy Mash', body:'Add boiled vegetables, mash with a potato masher. Add water to adjust consistency and simmer.', timer:'6 mins · Simmer', tip:'A slightly chunky texture is authentic and pleasing.', image:'https://hebbarskitchen.com/wp-content/uploads/2021/03/masala-pav-recipe-bhaji-masala-pav-mumbai-street-style-pav-masala-13-1024x1024.jpeg' },
-          { phase:'Phase 5 — Finish', title:'Finish with Butter', body:'Stir in remaining butter for shine, add lemon juice and chopped coriander leaf.', timer:'2 mins · Low', tip:'The final butter swipe gives pav bhaji its signature gloss.', image:'https://hebbarskitchen.com/wp-content/uploads/2021/03/masala-pav-recipe-bhaji-masala-pav-mumbai-street-style-pav-masala-14-1024x1024.jpeg' },
-          { phase:'Phase 6 — Toast Pav', title:'Toast the Buns', body:'Split pav buns, toast in butter until golden and crisp at edges.', timer:'4 mins · Medium', tip:'Butter-toast each side to lock in texture and flavor.', image:'https://hebbarskitchen.com/wp-content/uploads/2021/03/masala-pav-recipe-bhaji-masala-pav-mumbai-street-style-pav-masala-15-1024x1024.jpeg' },
+          { phase:'Phase 1 — Prep', title:'Chop and Parboil', body:'Dice onions, tomatoes, green pepper, and carrots. Boil potatoes, cauliflower and peas until fork tender.', timer:'10 mins · Medium heat', tip:'Uniform pieces ensure even mash and texture.', image:'photo-1474521863242-01aeff2334a0' },
+          { phase:'Phase 2 — Aromatics', title:'Saute Onions', body:'Heat butter, add cumin seeds, then sauté onions until translucent. Add ginger-garlic paste and cook until fragrance rises.', timer:'5 mins · Low-medium', tip:'Don’t let the garlic brown; this keeps the gravy sweet.', image:'photo-1556909114-f6e7ad7d3136' },
+          { phase:'Phase 3 — Tomato Cook', title:'Add Tomatoes & Spices', body:'Add chopped tomatoes, green chilli, chilli powder and pav bhaji masala. Cook until tomatoes soften and oil clears.', timer:'7 mins · Medium', tip:'Stir frequently to avoid sticking at the bottom.', image:'photo-1546069901-ba9599a7e63c' },
+          { phase:'Phase 4 — Blend', title:'Mash a Spicy Mash', body:'Add boiled vegetables, mash with a potato masher. Add water to adjust consistency and simmer.', timer:'6 mins · Simmer', tip:'A slightly chunky texture is authentic and pleasing.', image:'photo-1504674900247-0877df9cc836' },
+          { phase:'Phase 5 — Finish', title:'Finish with Butter', body:'Stir in remaining butter for shine, add lemon juice and chopped coriander leaf.', timer:'2 mins · Low', tip:'The final butter swipe gives pav bhaji its signature gloss.', image:'photo-1509042239860-f550ce710b93' },
+          { phase:'Phase 6 — Toast Pav', title:'Toast the Buns', body:'Split pav buns, toast in butter until golden and crisp at edges.', timer:'4 mins · Medium', tip:'Butter-toast each side to lock in texture and flavor.', image:'photo-1543353071-087092ec3939' },
           { phase:'Phase 7 — Plate', title:'Serve with Sides', body:'Plate bhaji, top with extra butter and coriander; serve with toasted pav, onion rings and lemon wedges.', timer:'2 mins · Ready', tip:'It is best enjoyed straight off the skillet when piping hot.', image:'photo-1551218808-94e220e084d2' }
         ],
         tips:[
@@ -332,8 +332,8 @@
           { phase:'Phase 1 — Mild Roast', title:'Soften Onions', body:'Sauté onions in butter until golden and soft. Cool and blend into smooth paste.', timer:'10 mins · Medium', tip:'A smooth onion paste gives the gravy its silkiness.', image:'photo-1525755662778-989d0524087e' },
           { phase:'Phase 2 — Tomato Base', title:'Cook Tomato Puree', body:'Cook tomato puree with chilli powder, salt and sugar until oil separates.', timer:'8 mins · Medium', tip:'Tomato should lose raw scent completely.', image:'photo-1532635240-2f7eb8bd5f16' },
           { phase:'Phase 3 — Creamy Blend', title:'Combine Sauce', body:'Add onion paste, simmer with garam masala and kasuri methi. Blend with cream.', timer:'6 mins · Low', tip:'Use low heat to avoid dairy splitting.', image:'photo-1572232152885-07d61743d877' },
-          { phase:'Phase 4 — Paneer Meet', title:'Add Paneer', body:'Stir in paneer cubes, cook for 3 minutes until warmed through.', timer:'3 mins · Low', tip:'Toss paneer gently to avoid breakage.', image:'https://hebbarskitchen.com/wp-content/uploads/2021/03/masala-pav-recipe-bhaji-masala-pav-mumbai-street-style-pav-masala-13-1024x1024.jpeg' },
-          { phase:'Phase 5 — Rest', title:'Infuse', body:'Cover and rest off heat for 4 minutes to meld flavors.', timer:'4 mins · Rest', tip:'Resting is key for creamy consistency.', image:'https://hebbarskitchen.com/wp-content/uploads/2021/03/masala-pav-recipe-bhaji-masala-pav-mumbai-street-style-pav-masala-15-1024x1024.jpeg' },
+          { phase:'Phase 4 — Paneer Meet', title:'Add Paneer', body:'Stir in paneer cubes, cook for 3 minutes until warmed through.', timer:'3 mins · Low', tip:'Toss paneer gently to avoid breakage.', image:'photo-1504674900247-0877df9cc836' },
+          { phase:'Phase 5 — Rest', title:'Infuse', body:'Cover and rest off heat for 4 minutes to meld flavors.', timer:'4 mins · Rest', tip:'Resting is key for creamy consistency.', image:'photo-1543353071-087092ec3939' },
           { phase:'Phase 6 — Garnish', title:'Finish with Cream', body:'Drizzle remaining cream and crushed pistachios; garnish with coriander.', timer:'1 min · Finish', tip:'Cream swirl adds visual elegance.', image:'photo-1589308078052-af6f62f3b5d0' }
         ],
         tips:[
@@ -376,7 +376,7 @@
         ],
         steps:[
           { phase:'Phase 1 — Soak', title:'Soak Pulses', body:'Soak urad dal and rajma together overnight (8-10 hours). Drain and rinse.', timer:'8 hrs · Soak', tip:'Soaking reduces cooking time and improves texture.', image:'photo-1551218398-008f7e693a6b' },
-          { phase:'Phase 2 — Pressure Cook', title:'Cook Lentils', body:'Cook soaked dal and rajma with water, turmeric and salt until soft.', timer:'30 mins · Pressure', tip:'Cook until lentils are soft and slightly broken.', image:'https://hebbarskitchen.com/wp-content/uploads/2021/03/masala-pav-recipe-bhaji-masala-pav-mumbai-street-style-pav-masala-13-1024x1024.jpeg' },
+          { phase:'Phase 2 — Pressure Cook', title:'Cook Lentils', body:'Cook soaked dal and rajma with water, turmeric and salt until soft.', timer:'30 mins · Pressure', tip:'Cook until lentils are soft and slightly broken.', image:'photo-1504674900247-0877df9cc836' },
           { phase:'Phase 3 — Base Masala', title:'Sauté Onions', body:'Heat butter+oil, sauté onions until deep golden, add ginger-garlic paste and tomatoes.', timer:'12 mins · Medium', tip:'Caramelized onions add sweetness and body.', image:'photo-1490645935967-10de6ba17061' },
           { phase:'Phase 4 — Spice Layers', title:'Add Spices', body:'Add chilli powder, garam masala, salt, kasuri methi and cook till oil rises.', timer:'4 mins · Low', tip:'Slow roast spices to mellow raw heat.', image:'photo-1556870310-0af1b6fea5cc' },
           { phase:'Phase 5 — Simmer', title:'Combine and Slow Cook', body:'Add cooked dal, simmer on low for 20 minutes stirring occasionally.', timer:'20 mins · Low simmer', tip:'Stir frequently to avoid sticking and get velvety texture.', image:'photo-1600491894764-2421e74b37f0' },
@@ -429,7 +429,7 @@
           }
         ],
         steps:[
-          { phase:'Phase 1 — Prep', title:'Wash Rice & Veg', body:'Wash and soak rice 30 mins. Chop vegetables into uniform cubes.', timer:'10 mins', tip:'Soaking rice brings out grain elongation and separates grains.', image:'https://hebbarskitchen.com/wp-content/uploads/2021/03/masala-pav-recipe-bhaji-masala-pav-mumbai-street-style-pav-masala-15-1024x1024.jpeg' },
+          { phase:'Phase 1 — Prep', title:'Wash Rice & Veg', body:'Wash and soak rice 30 mins. Chop vegetables into uniform cubes.', timer:'10 mins', tip:'Soaking rice brings out grain elongation and separates grains.', image:'photo-1543353071-087092ec3939' },
           { phase:'Phase 2 — Fry Onions', title:'Golden Onion Jam', body:'Fry thin sliced onions in ghee until deep golden and crisp. Reserve for garnish.', timer:'12 mins', tip:'Slow fry onions for caramel sweetness. Patience is key.', image:'photo-1595008211152-073c47f19918' },
           { phase:'Phase 3 — Spiced Veg', title:'Cook Vegetables', body:'Saute ginger-garlic paste, tomatoes, biryani masala, then add vegetables and yogurt. Cook 8 mins.', timer:'8 mins', tip:'Vegetables should be halfway done to avoid overcooking later.', image:'photo-1621676623696-8275ad1bb435' },
           { phase:'Phase 4 — Rice Parboil', title:'Boil Rice', body:'Boil soaked rice with salt and whole spices until 70% cooked, drain.', timer:'10 mins', tip:'Rice should be firm in center; it cooks further in dum.', image:'photo-1523986371872-9d3ba2e2f7d1' },
@@ -599,7 +599,9 @@
 
     function renderSlideContent(slide){
       if(slide.type==='intro'){
-        return `<h2>${slide.eyebrow}</h2><h3>${slide.title}</h3><p class="subtitle">${slide.subtitle}</p><div class="stats">${slide.stats.map(s=>`<div class="badge">${s}</div>`).join('')}</div>`;
+        const totalSteps = state.slides.length - 3;
+        const dynamicStats = [slide.stats[0], `${state.serving} servings`, slide.stats[2]];
+        return `<h2>${slide.eyebrow}</h2><h3>${slide.title}</h3><p class="subtitle">${slide.stats[0]} · Serves ${state.serving} · ${slide.stats[2]}</p><div class="stats">${dynamicStats.map(s=>`<div class="badge">${s}</div>`).join('')}</div>`;
       }
       if(slide.type==='ingredients'){
         return `<h2>${slide.eyebrow}</h2><h3>${slide.title}</h3><div class="ingredients-grid">${slide.groups.map(group=>`<div class="ingredient-group"><h4>${group.group}</h4>${group.items.map(item=>`<div class="ingredient-row"><span>${item.name}</span><span class="amount">${scaleAmount(item.amount,state.activeRecipe.baseServings,state.serving)} ${item.unit}</span></div>`).join('')}</div>`).join('')}</div><div class="tip-box"><p>Tip: ${slide.tip}</p></div>`;
